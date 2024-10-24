@@ -106,7 +106,7 @@ const Footer = () => {
                       <li key={data}>
                         <a
                           href={section.linkUrl[index]}
-                          className="hover:text-orange-500"
+                          className="hover:text-orange-500 cursor-pointer"
                         >
                           {data}
                         </a>
