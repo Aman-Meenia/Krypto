@@ -31,7 +31,7 @@ const profiles = [
 
 const TeamMember = () => {
   return (
-    <div className="flex flex-col max-w-[1184px] md:flex-row md:items-center gap-8 px-4 md:px-10 lg:px-16 md:mt-0 mx-auto md:mx-0 lg:mx-auto">
+    <div className="flex flex-col max-w-[1184px] md:flex-row md:items-center gap-8 px-4 md:px-10 lg:px-16 md:mt-0 mx-auto md:mx-0 lg:mx-auto pt-[56px] xl:pt-[32px]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0 relative w-full">
         {profiles.map((profile, index) => (
           <div
@@ -76,7 +76,7 @@ const TeamMember = () => {
               <div className="hidden md:block absolute h-full right-0 top-0 bottom-0 w-px bg-gray-200" />
             )}
             {index < profiles.length - 2 && (
-              <div className="hidden md:block absolute left-0 right-0 bottom-0 h-px bg-gray-200 w-full" />
+              <div className="hidden md:block absolute left-[-200%] right-0 bottom-0 h-px bg-gray-200 w-[500%]" />
             )}
           </div>
         ))}

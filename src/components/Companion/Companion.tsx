@@ -1,3 +1,7 @@
+import listIcon from "/img/Layout2.svg";
+import cloud from "/img/Cloud.png";
+import flyer from "/img/Flyer.png";
+
 const Companion = () => {
   const features = [
     "Free and instant fiat deposits and withdrawals",
@@ -30,18 +34,25 @@ const Companion = () => {
                 key={index}
                 className="flex items-center gap-5 text-sm sm:text-base"
               >
-                <span className="flex-shrink-0 w-12 h-12 bg-orange-500 rounded-2xl" />
+                <img src={listIcon} alt="Icon" />
                 <span>{feature}</span>
               </li>
             ))}
           </ul>
         </div>
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
-          <div className="relative max-w-[480px] md:max-w-[520px] lg:max-w-[580px] mx-auto md:mx-0">
+          <div className=" flex w-full justify-end ">
             <img
-              src="https://www.letskrypto.com/img/flyer.png"
+              src={cloud}
+              alt=""
+              className=" absolute w-[140px] ml-[30%]    "
+            />
+          </div>
+          <div className="relative mx-auto md:mx-0  md:w-[450px]  xl:w-[768px]">
+            <img
+              src={flyer}
               alt="Crypto companion illustration"
-              className="w-full h-auto object-contain"
+              className=" w-full h-auto object-contain"
             />
           </div>
         </div>

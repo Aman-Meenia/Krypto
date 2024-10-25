@@ -1,4 +1,7 @@
 import { Button } from "../ui/button";
+import kryptoOffer from "/img/Kryptooffer.png";
+import scroll from "/img/Scroll.svg";
+import cloud from "/img/cloud1.png";
 import { useMediaQuery } from "usehooks-ts";
 import DesktopHeader from "./DesktopHeader";
 import Header from "./Header";
@@ -11,6 +14,7 @@ import CustomerReview from "../CustomerReview/CustomerReview";
 import MediaAndNews from "../MediaAndNews/MediaAndNews";
 import Verified from "../Verified/Verified";
 import Download from "../Download/Download";
+import GetStarted from "../GetStarted/GetStarted";
 
 const Home = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -18,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="h-fit bg-white overflow-hidden relative">
+      <div className="h-[100%] bg-white overflow-hidden relative">
         {isDesktop ? <DesktopHeader /> : <Header />}
 
         {showOrangeCircle && (
@@ -26,8 +30,8 @@ const Home = () => {
         )}
 
         {/* <div className="flex flex-col md:flex-row md:items-center gap-8  md:ml-[10%] mt-16 md:mt-0 ml-10  "> */}
-        <div className="flex flex-col max-w-[1184px] md:flex-row md:items-center gap-8 px-[32px] md:px-[40px] lg:px-[72px] md:mt-0 mx-auto md:mx-0 lg:mx-auto">
-          {/* <div className="hidden md:block absoluteshrink-0  w-[50px] h-[50px] bg-[#F9D1B2] rounded-full" /> */}
+        <div className="flex flex-col max-w-[1184px] md:flex-row md:items-center gap-8 px-[32px] md:px-[40px] lg:px-[72px] md:mt-0 mx-auto md:mx-0 lg:mx-auto mt-[100px]">
+          <div className="hidden md:block absolute shrink-0 left-[calc(30%-360px)] w-[50px] h-[50px] bg-[#F9D1B2] rounded-full" />
           <div className="flex flex-col ">
             <h1 className="tracking-tight">
               <span className="block text-[60px] md:text-[96px] leading-[1] font-medium">
@@ -59,24 +63,36 @@ const Home = () => {
                 <span className="hidden md:block">See It In Action!</span>
               </button>
             </div>
+            <div className=" flex pt-[100px] md:py-[100px] gap-2">
+              <img src={scroll} alt="scroll" className="w-6 h-6" />
+              <h4 className="text-[#999fae]">Scroll to explore</h4>
+            </div>
+
             {!showOrangeCircle && (
-              <div className="overflow-hidden top-[-30px] absolute right-[-145px] w-[180px] h-[180px] bg-[#fc7e2f] rounded-full" />
+              <div className="overflow-hidden top-[100px] absolute right-[-100px] w-[180px] h-[180px] bg-[#fc7e2f] rounded-full" />
             )}
           </div>
-          <div className="relative flex  w-full md:w-1/2 h-[400px] md:h-[768px] mt-8 md:mt-0">
-            <div className="ml-[-50px] absolute left-0 h-full w-full md:min-w-[768px]">
+          <div className="relative flex  w-full md:w-1/2 h-[300px] md:h-[768px] mt-8 md:mt-0">
+            <div className="ml-[-50px] left-[10%]  absolute md:top-[40px] md:left-[100px]  w-full md:min-w-[768px]">
               <img
-                className="h-full w-full"
-                src="https://www.letskrypto.com/img/cus-main-pic-3.png"
+                className=" sm:w-[400px] md:w-[100%]"
+                src={kryptoOffer}
                 alt="Krypto app"
               />
             </div>
+            {/* <div className="absolute  md:top-[380px] md:right-[260px] "> */}
+            {/*   <img */}
+            {/*     className="w-full  md:h-[180px] h-[100px] sm:h-[140px] objectcover" */}
+            {/*     alt="Cloud" */}
+            {/*     src={cloud} */}
+            {/*   /> */}
+            {/* </div> */}
             {(showOrangeCircle || (!showOrangeCircle && !isDesktop)) && (
-              <div className="absolute md:top-[10px] md:right-[-300px] md:pl-[-100px] pl-[60%]">
+              <div className="absolute  md:top-[-50px] md:right-[-400px] md:pl-[-100px] pl-[60%]">
                 <img
-                  className="w-full md:h-[300px] h-[140px] object-cover object-left"
+                  className="w-full  md:h-[300px] h-[100px] sm:h-[140px] object-cover object-left"
                   alt="Cloud"
-                  src="https://www.letskrypto.com/img/cus-main-pic-1.png"
+                  src={cloud}
                 />
               </div>
             )}
@@ -85,6 +101,7 @@ const Home = () => {
       </div>
       <Features />
       <Companion />
+      <GetStarted />
       <CustomerReview />
       <Verified />
       <MediaAndNews />

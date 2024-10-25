@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "../../components/ui/card";
+import featureImage from "/img/Featurespic1.svg";
 import {
   Carousel,
   CarouselContent,
@@ -77,10 +78,11 @@ const Features = () => {
   };
 
   return (
-    <div className="w-full h-fit py-[80px] md:pt-[150px] md:pb-[100px] bg-[#27272E] overflow-x-hidden">
-      <div className="flex flex-col max-w-[1184px] md:flex-row md:items-center gap-8 px-[32px] md:px-[40px] lg:px-[72px] md:mt-0 mx-auto md:mx-0 lg:mx-auto">
-        <div className="w-full flex flex-col gap-14 mb-[100px]">
-          <div className="w-full flex flex-col md:flex-row">
+    <div className="w-full h-fit py-[80px] md:pt-[150px] md:pb-[100px] bg-[#27272E] overflow-hidden relative">
+      <div className="z-0 absolute top-[115px] right-[calc(50%-520px)] bg-[#525260] h-[268px] w-[268px] rounded-full"></div>
+      <div className="flex flex-col max-w-[1184px] md:flex-row md:items-center gap-8 px-[32px] md:px-[40px] lg:px-[72px] md:mt-0 mx-auto md:mx-0 lg:mx-auto realtive">
+        <div className=" z-10 w-full flex flex-col gap-14 mb-[100px]">
+          <div className="w-full flex flex-col md:flex-row mb-[60px]">
             <div className="w-[216px] flex-shrink-0">
               <h2 className="text-[16px] md:text-[20px] text-white mb-4 font-bold">
                 Features
@@ -90,12 +92,13 @@ const Features = () => {
               <h1 className="text-white text-5xl md:text-[68px] xl:text-[80px] mb-8 md:mb-12">
                 Experience the future of payments
               </h1>
-              <p className="text-[#ffffff80] text-[16px] md:text-[18px] overflow-auto">
+              <p className="text-[#ffffff80] text-[16px] md:text-[18px] overflow-auto max-w-[512px]">
                 Let Krypto guide you through the world of cryptocurrencies.
               </p>
             </div>
           </div>
 
+          <div className=" hidden lg:block absolute bottom-[500px]  left-[calc(50%+120px)] w-[1200px] bg-[#ffbaba] h-[1px] mb-10"></div>
           <div className="w-full flex flex-col md:flex-row mt-10">
             <div className="w-full md:w-[216px] flex  md:flex-col flex-shrink-0  justify-between  md:justify-evenly">
               <div className="w-[132px] flex flex-row h-6 justify-between items-center">
@@ -164,6 +167,13 @@ const Features = () => {
               </Carousel>
             </div>
           </div>
+        </div>
+        <div className=" z-0 absolute right-[-200px] md:right-[42%] lg:right-[50%] top-0 w-[1142px] h-[1143px]">
+          <img
+            src={featureImage}
+            alt="MediaAndNews"
+            className="w-full h-auto"
+          />
         </div>
       </div>
     </div>

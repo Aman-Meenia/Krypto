@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { ChevronDown, ChevronUp, ArrowUp } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import scrollIcon from "/img/Scroll.svg";
 
 type footerType = {
   title: string;
@@ -118,17 +119,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
+          <div className="mt-8 pt-8 md:border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-center md:text-left mb-4 md:mb-0">
               © 2021, Krypto. | Inventphile Ventures Pte Ltd. 68 CIRCULAR ROAD,
               #02-01, Singapore (049422) | support@letskrypto.com
             </p>
             <button
               onClick={scrollToTop}
-              className="flex items-center text-orange-500 hover:text-orange-600"
+              className="flex items-center text-[#999fae] gap-4"
             >
+              <img src={scrollIcon} alt="ScrollButton" />
               <span className="mr-2">Back to top</span>
-              <ArrowUp size={20} />
             </button>
           </div>
         </footer>
