@@ -1,5 +1,8 @@
 import { X } from "lucide-react";
 import { SheetClose } from "../ui/sheet";
+import kryptoLogo from "/img/KryptoLogo.png";
+
+import kryptoOffer from "/img/Kryptooffer.png";
 const MenuBar = () => {
   return (
     <>
@@ -12,11 +15,7 @@ const MenuBar = () => {
           </div>
           <div className="flex-grow flex justify-center">
             <a href="#">
-              <img
-                className="w-[100px]"
-                src="https://www.letskrypto.com/img/krypto-logo-nas.png"
-                alt="Krypto Logo"
-              />
+              <img className="w-[100px]" src={kryptoLogo} alt="Krypto Logo" />
             </a>
           </div>
         </header>
@@ -36,11 +35,7 @@ const MenuBar = () => {
         </div>
 
         <div className="flex justify-center">
-          <img
-            className="max-w-[350px]"
-            src="https://www.letskrypto.com/img/cus-main-pic-3.png"
-            alt=""
-          />
+          <img className="max-w-[350px]" src={kryptoOffer} alt="" />
         </div>
       </div>
     </>

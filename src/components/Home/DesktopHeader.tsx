@@ -1,4 +1,5 @@
 import { useMediaQuery } from "usehooks-ts";
+import kryprtoLogo from "/img/KryptoLogo.png";
 
 const DesktopHeader = () => {
   const showSingup = useMediaQuery("(min-width: 1024px)");
@@ -10,11 +11,7 @@ const DesktopHeader = () => {
       <header className=" z-10 relative flex w-full 2xl:container justify-between items-center  md:items-center gap-8 pt-8 px-[30px] md:px-[40px] lg:px-[68px]  mx-auto md:mx-0 xl:mx-auto mb-[100px]">
         <div className="flex items-center space-x-14">
           <a href="#">
-            <img
-              className="w-[160px]"
-              src="https://www.letskrypto.com/img/krypto-logo-nas.png"
-              alt="Krypto Logo"
-            />
+            <img className="w-[160px]" src={kryprtoLogo} alt="Krypto Logo" />
           </a>
           <div>
             <nav className="flex space-x-14 text-[18px]">

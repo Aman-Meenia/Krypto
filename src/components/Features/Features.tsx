@@ -17,31 +17,31 @@ type featureType = {
 const features: featureType[] = [
   {
     title: "Krypto Pay",
-    image: "https://www.letskrypto.com/img/kryptopay.png",
+    image: "/img/KryptoPay.png",
     description:
       "Using Krypto's patented technology for the world's first time we bridge the gaps between day to day payments and cryptocurrencies. Now pay with cryptocurrency in any shop in India.",
   },
   {
     title: "Send Krypto",
-    image: "https://www.letskrypto.com/img/kryptopay.png",
+    image: "/img/SendKrypto.png",
     description:
       "Cryptocurrency money transfer made simple, now send cryptocurrency to anyone around the world for free using Krypto.",
   },
   {
     title: "Krypto Exchange",
-    image: "https://www.letskrypto.com/img/kryptopay.png",
+    image: "/img/KryptoExchange.png",
     description:
       "Krypto makes the vexing procedure of dealing with cryptocurrency exchanges simple! Krypto is tailored to optimize the understanding of the user and make all processes smooth and aesthetically pleasing",
   },
   {
     title: "Security",
-    image: "https://www.letskrypto.com/img/kryptopay.png",
+    image: "/img/Securitykrypto.png",
     description:
       "Security remains a key issue preventing wide spread acceptance of crypto currency as an investment asset. We strongly believe in developing our platform to be highly secured in which traders can feel safe to invest and trade. ",
   },
   {
     title: "Lowest Fees",
-    image: "https://www.letskrypto.com/img/kryptopay.png",
+    image: "/img/LowestFees.png",
     description:
       "Our motto is to promote cryptocurrency usage and drive the world towards decentralization, thus Krypto provides the lowest fees in the market for trading.",
   },

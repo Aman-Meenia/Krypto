@@ -1,6 +1,7 @@
 import { AlignLeft } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "../../components/ui/sheet";
 import MenuBar from "./MenuBar";
+import kryptoLogo from "/img/KryptoLogo.png";
 
 const Header = () => {
   return (
@@ -22,11 +23,7 @@ const Header = () => {
         </div>
         <div className="flex-grow flex justify-center">
           <a href="#">
-            <img
-              className="w-[100px]"
-              src="https://www.letskrypto.com/img/krypto-logo-nas.png"
-              alt="Krypto Logo"
-            />
+            <img className="w-[100px]" src={kryptoLogo} alt="Krypto Logo" />
           </a>
         </div>
       </header>
